@@ -1,0 +1,36 @@
+[config]
+ignore_pr_title = ["^(?!(?i)COLL-\\d+ ).*"] # must start with task id: "COLL-XXXX " or "Coll-XXXX"
+ignore_pr_target_branches = ["master"]
+model = "gpt-5"
+fallback_models = ["o4-mini"]
+
+[pr_description] # /describe #
+publish_description_as_comment = true
+publish_labels = true
+enable_pr_type = false
+add_original_user_description = false
+
+[pr_reviewer] # /review #
+check_pr_additional_content = true
+require_score_review = true
+require_todo_scan = true
+require_can_be_split_review = true
+extra_instructions = """\
+In the code feedback section, emphasize the following:
+- Do the created or updated Vue components have created or updated stories in relative Storybook files? Do the story files contain `play` function to test components?
+- AI makes mistakes and is unreliable - review the code thoroughly by yourself.
+"""
+
+[pr_code_suggestions]
+commitable_code_suggestions = true
+wiki_page_accepted_suggestions = false
+enable_chat_in_code_suggestions = false
+
+[pr_find_similar_component]
+search_from_org = true
+
+# all available configuration options
+# https://github.com/qodo-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml/
+
+# documentation of options
+# https://qodo-merge-docs.qodo.ai/tools/
