@@ -1,3 +1,4 @@
+```toml
 [config]
 ignore_pr_title = ["^(?!(?i)COLL-\\d+ ).*"] # must start with task id: "COLL-XXXX " or "Coll-XXXX"
 ignore_pr_target_branches = ["master"]
@@ -29,8 +30,12 @@ enable_chat_in_code_suggestions = false
 [pr_find_similar_component]
 search_from_org = true
 
+[jira]
+jira_base_url = "https://statscore.atlassian.net"
+
 # all available configuration options
 # https://github.com/qodo-ai/pr-agent/blob/main/pr_agent/settings/configuration.toml/
 
 # documentation of options
 # https://qodo-merge-docs.qodo.ai/tools/
+```
