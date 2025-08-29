@@ -15,6 +15,7 @@ check_pr_additional_content = true
 require_score_review = true
 require_todo_scan = true
 require_can_be_split_review = true
+require_estimate_contribution_time_cost = true
 extra_instructions = """\
 In the code feedback section, emphasize the following:
 - Do the created or updated Vue components have created or updated stories in relative Storybook files? Do the story files contain `play` function to test components?
