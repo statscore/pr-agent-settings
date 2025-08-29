@@ -1,5 +1,4 @@
 [config]
-# ignore_pr_title = ["^(?!(?i)COLL-\\d+ ).*"] # must start with task id: "COLL-XXXX " or "Coll-XXXX"
 ignore_pr_target_branches = ["master"]
 model = "gpt-5"
 fallback_models = ["o4-mini"]
