@@ -1,7 +1,5 @@
 [config]
 ignore_pr_target_branches = ["master"]
-model = "gpt-5"
-fallback_models = ["o4-mini"]
 
 [pr_description] # /describe #
 publish_description_as_comment = true
@@ -12,7 +10,6 @@ add_original_user_description = false
 [pr_reviewer] # /review #
 check_pr_additional_content = true
 require_score_review = true
-require_todo_scan = true
 require_can_be_split_review = true
 require_estimate_contribution_time_cost = true
 extra_instructions = """\
