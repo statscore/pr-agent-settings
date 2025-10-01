@@ -8,6 +8,9 @@ publish_labels = true
 enable_pr_type = false
 add_original_user_description = false
 
+[rag_arguments]
+enable_rag=true
+
 [pr_reviewer] # /review #
 check_pr_additional_content = true
 require_score_review = true
