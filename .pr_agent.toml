@@ -8,14 +8,16 @@ publish_labels = true
 enable_pr_type = false
 add_original_user_description = false
 
-[rag_arguments]
+# [rag_arguments]
 # enable_rag=true
 
-[pr_reviewer] # /review #
+[pr_compliance]
 check_pr_additional_content = true
 require_score_review = true
 require_can_be_split_review = true
 require_estimate_contribution_time_cost = true
+enable_ticket_labels = true
+enable_no_ticket_labels = true
 extra_instructions = """\
 In the code feedback section, emphasize the following:
 - Do the created or updated Vue components have created or updated stories in relative Storybook files? Do the story files contain `play` function to test components?
