@@ -11,18 +11,20 @@ add_original_user_description = false
 # [rag_arguments]
 # enable_rag=true
 
-[pr_compliance]
+[pr_reviewer]
 check_pr_additional_content = true
 require_score_review = true
 require_can_be_split_review = true
 require_estimate_contribution_time_cost = true
-enable_ticket_labels = true
-enable_no_ticket_labels = true
 extra_instructions = """\
 In the code feedback section, emphasize the following:
 - Do the created or updated Vue components have created or updated stories in relative Storybook files? Do the story files contain `play` function to test components?
 - AI makes mistakes and is unreliable - review the code thoroughly by yourself.
 """
+
+[pr_compliance]
+enable_ticket_labels = true
+enable_no_ticket_labels = true
 
 [pr_code_suggestions]
 commitable_code_suggestions = true
