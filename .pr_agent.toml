@@ -1,6 +1,7 @@
 [config]
 ignore_pr_target_branches = ["master"]
 ignore_pr_title = ["^merge"]
+enable_comment_approval = true
 
 [pr_description] # /describe #
 publish_description_as_comment = true
