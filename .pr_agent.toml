@@ -30,6 +30,21 @@ enable_chat_in_code_suggestions = false
 [pr_find_similar_component]
 search_from_org = true
 
+[github_app]
+pr_commands = [
+    "/describe --pr_description.final_update_message=false",
+    "/review",
+    "/improve",
+    "/compliance"
+]
+# settings for "pull_request" event with "synchronize" action - used to detect and handle push triggers for new commits
+handle_push_trigger = true
+push_commands = [
+    "/describe",
+    "/review",
+    "/compliance"
+]
+
 [jira]
 jira_base_url = "https://statscore.atlassian.net"
 
