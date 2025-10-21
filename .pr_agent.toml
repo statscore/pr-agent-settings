@@ -34,6 +34,7 @@ pr_commands = [
     "/describe",
     "/review",
     "/improve",
+    "/add_docs",
     "/compliance"
 ]
 # settings for "pull_request" event with "synchronize" action - used to detect and handle push triggers for new commits
