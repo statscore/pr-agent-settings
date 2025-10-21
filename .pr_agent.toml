@@ -15,7 +15,6 @@ enable_rag=true
 [pr_reviewer] # /review #
 require_score_review = true
 require_can_be_split_review = true
-require_estimate_contribution_time_cost = true
 
 [pr_compliance]
 enable_ticket_labels = true
