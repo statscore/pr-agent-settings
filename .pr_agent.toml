@@ -20,7 +20,6 @@ require_estimate_contribution_time_cost = true
 [pr_compliance]
 enable_ticket_labels = true
 enable_custom_compliance_section = false
-enable_no_ticket_labels = true
 
 [pr_code_suggestions]
 commitable_code_suggestions = true
