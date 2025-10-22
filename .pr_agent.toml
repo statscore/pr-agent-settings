@@ -1,7 +1,6 @@
 [config]
 ignore_pr_target_branches = ["master"]
 ignore_pr_title = ["^merge"]
-enable_comment_approval = true
 
 [pr_description] # /describe #
 publish_description_as_comment = true
@@ -14,20 +13,20 @@ enable_rag=true
 
 [pr_reviewer] # /review #
 require_score_review = true
-require_can_be_split_review = true
 require_ticket_analysis_review = true
 
 [pr_compliance]
 enable_ticket_labels = true
 enable_custom_compliance_section = false
+enable_user_defined_compliance_labels = false
+enable_security_section = false
+enable_codebase_duplication_section = false
 
 [pr_code_suggestions]
 commitable_code_suggestions = true
 wiki_page_accepted_suggestions = false
 enable_chat_in_code_suggestions = false
 
-[pr_find_similar_component]
-search_from_org = true
 
 [github_app]
 pr_commands = [
