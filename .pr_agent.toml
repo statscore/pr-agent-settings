@@ -33,7 +33,7 @@ pr_commands = [
     "/describe",
     "/review",
     "/improve",
-    "/add_docs",
+    # "/add_docs",
     # "/compliance"
 ]
 docs_style = google
