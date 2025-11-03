@@ -36,7 +36,7 @@ pr_commands = [
     "/add_docs",
     # "/compliance"
 ]
-docs_style = "google"
+docs_style = "numpy"
 
 # settings for "pull_request" event with "synchronize" action - used to detect and handle push triggers for new commits
 handle_push_trigger = true
