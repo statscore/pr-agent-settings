@@ -1,6 +1,8 @@
 [config]
 ignore_pr_target_branches = ["master"]
 ignore_pr_title = ["^merge"]
+model = 'claude-4'
+reasoning_effort = 'high'
 
 [pr_description] # /describe #
 publish_description_as_comment = true
@@ -27,6 +29,11 @@ commitable_code_suggestions = true
 wiki_page_accepted_suggestions = false
 enable_chat_in_code_suggestions = false
 
+[pr_custom_prompt] # /custom_prompt #
+num_code_suggestions_per_chunk = 1
+
+[pr_add_docs]
+docs_style = "restructuredtext"
 
 [github_app]
 pr_commands = [
@@ -36,7 +43,6 @@ pr_commands = [
     "/add_docs",
     # "/compliance"
 ]
-docs_style = "restructuredtext"
 
 # settings for "pull_request" event with "synchronize" action - used to detect and handle push triggers for new commits
 handle_push_trigger = true
