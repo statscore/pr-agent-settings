@@ -34,23 +34,19 @@ enable_chat_in_code_suggestions = false
 num_code_suggestions_per_chunk = 1
 
 [pr_add_docs]
-docs_style = "restructuredtext"
 
 [github_app]
 pr_commands = [
     "/describe",
     "/review",
-    "/improve",
-    "/add_docs",
-    # "/compliance"
+    "/improve"
 ]
 
 # settings for "pull_request" event with "synchronize" action - used to detect and handle push triggers for new commits
 handle_push_trigger = true
 push_commands = [
     "/describe",
-    "/review",
-    # "/compliance"
+    "/review"
 ]
 
 [jira]
