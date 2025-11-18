@@ -18,6 +18,7 @@ enable_rag=true
 require_score_review = true
 require_ticket_analysis_review = true
 num_max_findings = 2
+publish_output_no_suggestions = false
 
 [pr_compliance]
 enable_ticket_labels = true
