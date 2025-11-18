@@ -41,8 +41,7 @@ num_code_suggestions_per_chunk = 1
 [github_app]
 pr_commands = [
     "/describe",
-    "/review",
-    "/improve"
+    "/review"
 ]
 
 # settings for "pull_request" event with "synchronize" action - used to detect and handle push triggers for new commits
