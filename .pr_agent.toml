@@ -40,8 +40,8 @@ num_code_suggestions_per_chunk = 1
 
 [github_app]
 pr_commands = [
-    "/review",
     "/describe",
+    "/review",
     "/improve"
 ]
 
