@@ -1,8 +1,6 @@
 [config]
 ignore_pr_target_branches = ["master"]
 ignore_pr_title = ["^merge"]
-model = 'claude-4'
-enable_claude_extended_thinking = true
 reasoning_effort = 'high'
 
 [pr_description] # /describe #
